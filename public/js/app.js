@@ -26,7 +26,7 @@ form.addEventListener('submit', (e)=>{
     e.preventDefault(); //evita que se recargue la pagina al hacer submit
     const location = searchedLocation.value
     forecastCity.innerHTML = 'Loading...';
-    forecastMessage.innerHTML = '';
+    forecastMessage.innerHTML = ''; 
     
     fetch( `/weather?address=${location}`)
         .then(response => response.json())
