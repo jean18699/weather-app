@@ -30,7 +30,7 @@ form.addEventListener('submit', (e)=>{
     
     fetch( `/weather?address=${location}`)
         .then(response => response.json())
-        .then(data => {
+        .then(data => { 
             if(data.error){
                 console.error("Not results found for this location");
                 forecastCity.innerHTML = 'Results not found for this location';
